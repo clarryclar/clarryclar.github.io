@@ -1,14 +1,13 @@
 
 .hero {
     display: flex;
-    width: 80vw;
+    width: 1000px;
     height: 75vh;
     background-color: white;
     margin: auto;
     justify-content: center;
     color: #111;
     padding-top: 10vh;
-    /* padding-left: 50px; */
     box-sizing: border-box;
   }
   
@@ -76,4 +75,42 @@
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+  }
+
+  @media (max-width: 1000px) {
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 100vw;
+      padding-top: 10px;
+    }
+  
+    .hero-content {
+      margin: 40px;
+      text-align: center;
+      padding-right: 0 ;
+
+    }
+  
+    .hero-content p {
+      text-align: justify;
+    }
+  
+    .hero-content h1, 
+    .hero-content h2, 
+    .hero-content .greeting {
+      text-align: center;
+    }
+  
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 650px)  {
+    
   }
