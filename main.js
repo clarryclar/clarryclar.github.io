@@ -9,6 +9,9 @@ function loadComponent(containerId, fileName) {
         .catch(err => console.error(`Error loading ${fileName}:`, err));
     }
   }
-
+  
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
   loadComponent('header', 'header.html');
   loadComponent('hero', 'hero.html');
