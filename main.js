@@ -13,5 +13,17 @@ function loadComponent(containerId, fileName) {
   function myFunction(x) {
     x.classList.toggle("change");
   }
+
+  
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+ 
+
+
   loadComponent('header', 'header.html');
   loadComponent('hero', 'hero.html');
