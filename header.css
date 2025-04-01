@@ -1,6 +1,7 @@
 header {
   background-color: #111;
   width: 100%;
+  justify-content: space-between;
 }
 
 .logo {
@@ -13,8 +14,10 @@ header {
 ul {
   list-style-type: none;
   display: flex;
-  margin: 0px;
+  justify-content: center;
   padding: 0px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 li a {
@@ -27,8 +30,15 @@ li a {
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
+
+.overlay-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-button {
@@ -38,6 +48,10 @@ nav {
   text-decoration: none;
   border-radius: 5px;
   margin-right: 40px;
+}
+
+.closebtn {
+  display: none;
 }
 
 .burger {
@@ -63,11 +77,16 @@ nav {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
   nav {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+
+
+  .overlay-content {
+    flex-direction: column;
   }
 
   .logo {
@@ -112,7 +131,9 @@ nav {
     display: none;
   } */
 
- 
+  .closebtn {
+    display:block;
+  }
 
   .overlay {
     height: 0%;
