@@ -51,10 +51,6 @@ nav {
   margin-right: 40px;
 }
 
-.closebtn {
-  display: none;
-}
-
 .burger {
   display: none;
   cursor: pointer;
