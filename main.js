@@ -17,10 +17,14 @@ function loadComponent(containerId, fileName) {
   
   function openNav() {
     document.getElementById("myNav").style.height = "100%";
+    document.getElementById("burger").style.display = "none"; // Hide menu icon
+
   }
   
   function closeNav() {
     document.getElementById("myNav").style.height = "0%";
+    document.getElementById("burger").style.display = "block"; // Show menu icon again
+
   }
  
 
