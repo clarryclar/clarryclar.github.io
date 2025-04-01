@@ -33,7 +33,6 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  height: 70px;
 }
 
 .overlay-content {
@@ -109,6 +108,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 70px;
   }
 
   .logo {
